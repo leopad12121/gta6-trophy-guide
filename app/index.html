@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — all 55 trophies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="title-block">
+    <h1>Grand Theft Auto VI — Trophy Guide &amp; Tracker</h1>
+    <p class="subtitle">All 55 PlayStation 5 trophies: 1 platinum, 2 gold, 6 silver, 46 bronze. Every guide in its own words, with its sources. Works offline — no account, no network, your progress stays in this browser.</p>
+  </div>
+  <div class="progress-block" aria-label="Progress">
+    <div class="progress-line"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span></div>
+    <div class="progress-bar"><div id="progressFill"></div></div>
+    <p class="progress-note" id="gradeCounts"></p>
+  </div>
+</header>
+
+<nav class="views" aria-label="Views">
+  <button id="tabChecklist" type="button" class="tab active">Checklist</button>
+  <button id="tabRoadmap" type="button" class="tab">Roadmap to Platinum</button>
+</nav>
+
+<section id="checklistView">
+  <div class="controls">
+    <label class="search">Search <input id="search" type="search" placeholder="trophy, mission or keyword…" autocomplete="off"></label>
+    <div class="chips" id="kindChips" role="group" aria-label="Filter by kind">
+      <button type="button" data-kind="all" class="chip active">All</button>
+      <button type="button" data-kind="story" class="chip">Story</button>
+      <button type="button" data-kind="missable" class="chip">Missable</button>
+      <button type="button" data-kind="collectibles" class="chip">Collectibles</button>
+      <button type="button" data-kind="activities" class="chip">Activities</button>
+      <button type="button" data-kind="online" class="chip">Online</button>
+    </div>
+    <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+    <label>Show <select id="earnedFilter"><option value="all">All trophies</option><option value="earned">Earned only</option><option value="remaining">Remaining only</option></select></label>
+    <label class="spoiler-toggle"><input id="spoiler" type="checkbox"> Hide story spoilers</label>
+    <button id="export" type="button">Export progress</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+  </div>
+
+  <p class="missable-banner" id="missableBanner"><strong>Watch out — 1 possibly missable trophy:</strong> <button type="button" class="linklike" data-open-trophy="28">Positive Mental Attitude</button> needs a Chapter 1 meditation that disappears after the chapter. Everything else can be earned after the story.</p>
+
+  <div class="layout">
+    <main>
+      <p class="list-meta" id="listMeta"></p>
+      <ul id="rows" class="trophy-list"></ul>
+      <p class="empty" id="emptyState" hidden>No trophies match these filters.</p>
+    </main>
+    <aside class="detail" id="detail" aria-live="polite"></aside>
+  </div>
+</section>
+
+<section id="roadmapView" hidden>
+  <p class="roadmap-intro">The order to earn them in, built from the official descriptions. Stages 1–2 follow the story; stages 3–5 are the open-world clean-up; stage 6 is the 100% run that ends in the platinum. There is no mission replay and no New Game+, so keep a manual save at the start of every chapter — and do the Chapter 1 balcony meditation (see <button type="button" class="linklike" data-open-trophy="28">Positive Mental Attitude</button>) before Chapter 1 ends.</p>
+  <ol id="roadmapStages" class="roadmap-stages"></ol>
+  <p class="roadmap-note">Sources for the roadmap: the official trophy list as published on PSNProfiles and Exophase, and the GTABase trophy guide. Estimated time to platinum: about 200 hours (PowerPyx, via GTABase).</p>
+</section>
+
+<footer>
+  <p>Guide written November 2026 for the game as launched on 19 November 2026 (Rockstar Games). Trophy names, descriptions and grades are PlayStation's official list. Five trophies' exact steps are still being confirmed by players and are marked as such — this guide says so rather than guessing. Sources are named beside each trophy.</p>
+  <p>Unofficial fan guide. Not affiliated with Rockstar Games or PlayStation. No game artwork, logos or audio are used here.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
